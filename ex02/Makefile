@@ -1,9 +1,9 @@
 CC = c++
 FLAGS = -Wall -Wextra -Werror -std=c++98
-SRCS = convertir.cpp main.cpp ScalarConverter.cpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 
-NAME = convertir
+NAME = Array
 
 all: $(NAME)
 
