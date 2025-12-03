@@ -51,14 +51,14 @@ Array<T>& Array<T>::operator=(const Array& other){
 
 template <typename T>
 T& Array<T>::operator[](int index){
-    if (index < 0 || index >= this->n)
+    if (index < 0 || index >= static_cast<int>(this->n))
         throw std::out_of_range("the index is out of range");
     return (this->arr[index]);
 }
 
 template <typename T>
 const T& Array<T>::operator[](int index) const{
-    if (index < 0 || index >= this->n)
+    if (index < 0 || index >= static_cast<int>(this->n))
         throw std::out_of_range("the index is out of range");
     return (this->arr[index]);
 }
