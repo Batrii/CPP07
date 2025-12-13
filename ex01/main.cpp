@@ -1,15 +1,5 @@
 #include "iter.hpp"
 
-template <typename Array, typename Lenght, typename Func>
-void iter(Array arr, const Lenght len, Func Function){
-    Lenght i = 0;
-    while (i < len)
-    {
-        Function(arr[i]);
-        i++;
-    }
-}
-
 int arr_plusone(int a)
 {
     a = a + 2;
