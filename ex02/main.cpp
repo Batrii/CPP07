@@ -33,7 +33,6 @@ int main(){
     try{
         Array<double> emptyArr;
         std::cout << "Size of emptyArr: " << emptyArr.size() << std::endl;
-        // Attempting to access an element in the empty array
         std::cout << emptyArr[0] << std::endl;
     }catch(const std::exception& e)
     {
