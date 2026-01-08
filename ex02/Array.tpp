@@ -18,7 +18,7 @@ template<typename T>
 Array<T>::Array(const Array& other){
     this->n = other.n;
     this->arr = new T[other.n];
-    int i = 0;
+    unsigned int i = 0;
     while (i < other.n)
     {
         this->arr[i] = other.arr[i];
@@ -37,8 +37,8 @@ Array<T>& Array<T>::operator=(const Array& other){
             this->arr = NULL;
         else{
             this->arr = new T[other.n];
-            int i = 0;
-            while (i < static_cast<int>(other.n))
+            unsigned int i = 0;
+            while (i < other.n)
             {
                 this->arr[i] = other.arr[i];
                 i++;
